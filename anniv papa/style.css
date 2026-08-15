@@ -1,0 +1,445 @@
+** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #090914;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: rgba(10, 10, 25, .9);
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #ff6b9a;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(circle at 20% 30%, #482060, transparent 40%),
+        radial-gradient(circle at 80% 70%, #172b68, transparent 40%),
+        #090914;
+}
+
+.hero-content {
+    max-width: 900px;
+
+    transition: transform .1s;
+}
+
+.hero-content > p:first-child {
+    color: #ff79a5;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: clamp(45px, 8vw, 90px);
+    margin: 25px 0;
+}
+
+h1 span {
+    display: block;
+
+    color: #ffd166;
+}
+
+.description {
+    font-size: 20px;
+    opacity: .8;
+
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    padding: 15px 28px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ff5f9e,
+        #ff9f43
+    );
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+section {
+    min-height: 80vh;
+
+    padding: 120px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+section h2 {
+    font-size: clamp(35px, 5vw, 60px);
+
+    margin-bottom: 40px;
+}
+
+.card {
+    max-width: 750px;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    box-shadow: 0 20px 70px rgba(0,0,0,.3);
+}
+
+.card p {
+    font-size: 19px;
+    line-height: 1.8;
+
+    margin: 15px;
+}
+
+.heart {
+    font-size: 70px;
+
+    animation: heart 1.5s infinite;
+}
+
+
+/* GÂTEAU */
+
+#gateau {
+    background:
+        radial-gradient(circle, #251638, #090914);
+}
+
+.cake-area {
+    position: relative;
+
+    width: 430px;
+
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.candles {
+    position: absolute;
+
+    top: -90px;
+
+    display: flex;
+    gap: 25px;
+
+    z-index: 5;
+}
+
+.candle {
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.stick {
+    width: 18px;
+    height: 60px;
+
+    background: repeating-linear-gradient(
+        45deg,
+        white 0 7px,
+        #ff6b9a 7px 14px
+    );
+
+    border-radius: 5px;
+}
+
+.flame {
+    width: 20px;
+    height: 30px;
+
+    background: #ffd166;
+
+    border-radius: 50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+
+    margin-bottom: 8px;
+
+    box-shadow:
+        0 0 10px #ffd166,
+        0 0 30px #ff9f43;
+
+    animation: flame .5s infinite alternate;
+}
+
+.candle.off .flame {
+    display: none;
+}
+
+.cake {
+    width: 350px;
+}
+
+.cake-top {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffe0ec;
+
+    border-radius: 50% 50% 10px 10px;
+
+    color: #ff6b9a;
+
+    font-size: 25px;
+}
+
+.cake-middle {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ff7096;
+
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.cake-bottom {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffb6c9;
+
+    border-radius: 0 0 20px 20px;
+
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.plate {
+    width: 430px;
+    height: 25px;
+
+    margin-top: 10px;
+
+    border-radius: 50%;
+
+    background: #ddd;
+}
+
+.buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 50px;
+}
+
+#message-cake {
+    margin-top: 25px;
+
+    color: #ffd166;
+
+    font-size: 20px;
+}
+
+
+/* FINAL */
+
+.final {
+    min-height: 70vh;
+
+    background:
+        radial-gradient(circle, #35133d, #090914);
+}
+
+.big {
+    font-size: 90px;
+
+    animation: bounce 2s infinite;
+}
+
+.final h2 {
+    color: #ffd166;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 40px;
+
+    background: #05050b;
+
+    color: #aaa;
+}
+
+
+/* CONFETTIS */
+
+.confetti {
+    position: fixed;
+
+    top: -20px;
+
+    width: 10px;
+    height: 18px;
+
+    z-index: 999;
+
+    animation: fall 3s linear forwards;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes flame {
+
+    from {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    to {
+        transform: rotate(-45deg) scale(1.15);
+    }
+
+}
+
+@keyframes heart {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+}
+
+@keyframes fall {
+
+    from {
+        transform: translateY(0) rotate(0);
+    }
+
+    to {
+        transform: translateY(110vh) rotate(720deg);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width: 600px) {
+
+    .links {
+        display: none;
+    }
+
+    .cake-area {
+        transform: scale(.75);
+
+        margin-top: 50px;
+
+        margin-bottom: -60px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joyeux anniversaire Papa 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">🎂 Papa</div>
+
+        <div class="links">
+            <a href="#accueil">Accueil</a>
+            <a href="#message">Message</a>
+            <a href="#gateau">Gâteau</a>
+        </div>
+    </nav>
+
+    <section id="accueil" class="hero">
+
+        <div class="hero-content">
+
+            <p>✨ Une journée très spéciale ✨</p>
+
+            <h1>
+                Joyeux anniversaire
+                <span>Imad</span> ❤️
+            </h1>
+
+            <p class="description">
+                Aujourd'hui est une journée spéciale,
+                car c'est l'anniversaire de Papa ! 🎉
+            </p>
+
+            <button onclick="goToCake()">
+                🎂 Voir le gâteau
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section id="message">
+
+        <h2>💌 Un petit message</h2>
+
+        <div class="card">
+
+            <div class="heart">❤️</div>
+
+            <p>
+                Papa, je te souhaite un très joyeux anniversaire !
+            </p>
+
+            <p>
+                Merci pour tous les beaux moments que nous
+                partageons ensemble.
+            </p>
+
+            <p>
+                Je te souhaite beaucoup de bonheur,
+                de réussite et de beaux souvenirs ! 🎉
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="gateau">
+
+        <h2>🎂 Le gâteau d'anniversaire</h2>
+
+        <p>Clique sur les bougies pour les éteindre !</p>
+
+        <div class="cake-area">
+
+            <div class="candles">
+
+                <div class="candle" onclick="toggleCandle(this)">
+                    <div class="flame"></div>
+                    <div class="stick"></div>
+                </div>
+
+                <div class="candle" onclick="toggleCandle(this)">
+                    <div class="flame"></div>
+                    <div class="stick"></div>
+                </div>
+
+                <div class="candle" onclick="toggleCandle(this)">
+                    <div class="flame"></div>
+                    <div class="stick"></div>
+                </div>
+
+                <div class="candle" onclick="toggleCandle(this)">
+                    <div class="flame"></div>
+                    <div class="stick"></div>
+                </div>
+
+                <div class="candle" onclick="toggleCandle(this)">
+                    <div class="flame"></div>
+                    <div class="stick"></div>
+                </div>
+
+            </div>
+
+            <div class="cake">
+
+                <div class="cake-top">
+                    🍓　🍓　🍓
+                </div>
+
+                <div class="cake-middle">
+                    HAPPY
+                </div>
+
+                <div class="cake-bottom">
+                    BIRTHDAY
+                </div>
+
+            </div>
+
+            <div class="plate"></div>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button onclick="lightCandles()">
+                🔥 Allumer
+            </button>
+
+            <button onclick="blowCandles()">
+                💨 Souffler
+            </button>
+
+        </div>
+
+        <p id="message-cake">
+            ✨ Fais un vœu !
+        </p>
+
+    </section>
+
+
+    <section class="final">
+
+        <div class="card">
+
+            <div class="big">🎉</div>
+
+            <h2>JOYEUX ANNIVERSAIRE !</h2>
+
+            <p>
+                Que cette journée soit remplie de bonheur ❤️
+            </p>
+
+            <button onclick="celebrate()">
+                🎊 Confettis !
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        Créé avec ❤️ pour Imad
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
